@@ -1,0 +1,150 @@
+/*
+	Author	:	Christopher Robinson
+	Email	:	christopher@edg3.co.uk
+	Website	:	http://www.edg3.co.uk/
+*/
+
+* {
+	box-sizing: border-box; /* CRITICAL: Includes borders in width calculations */
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* general */
+a {
+	color: #777;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+}
+
+/* body */
+body {
+	background: #ffffff;
+	color: #555;
+	font: 0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	border-bottom: 1px solid #999;
+	height: 80px;
+	margin: 0 auto;
+	width: 751px;
+}
+#header h1 {
+	color: #888;
+	font-size: 300%;
+	letter-spacing: -3px;
+	text-align: right;
+	padding: 5px;
+	margin-bottom: -20px;
+}
+#header h2 {
+	color: #CCC;
+	font-size: 200%;
+	letter-spacing: -2px;
+	text-align: right;
+}
+
+/* --- NAVIGATION FIX --- */
+#navigation {
+	background: #fafafa;
+	border: 1px solid #999;
+	margin: 0 auto;
+	width: 751px;   /* Matches header and content */
+	height: auto;   /* Slightly taller to fit text better */
+	list-style: none;
+	display: flex;  /* Forces items into one horizontal line */
+}
+
+#navigation li {
+	flex: 1;        /* Automatically divides 751px by 7 items (~107px each) */
+	border-right: 1px solid #999;
+	display: flex;
+}
+
+#navigation li:last-child {
+	border-right: none;
+}
+
+#navigation a {
+	color: #555;
+	text-decoration: none;
+	display: flex;
+	align-items: center; /* Centers text vertically */
+	justify-content: center; /* Centers text horizontally */
+	width: 100%;
+	text-align: center;
+	font-size: 11px; 
+	padding: 2px;
+}
+
+#navigation a:hover {
+	background: #e3e3e3;
+	color: #333;
+}
+
+#navigation .active {
+	background: #e3e3e3;
+	color: #777;
+}
+
+#content {
+    clear: both;     
+    display: block;   
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 751px;
+}
+
+#content h1 {
+	border-bottom: 1px dashed #999;
+	font-size: 1.8em;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#content form p {
+	display: flex; 
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 150px 0 0;
+	margin: 0;
+}
+
+#content form input {
+	margin-left: 15px;
+}
+
+#footer {
+	border-top: 1px solid #999; 
+	height: 50px;
+	margin: 20px auto 0;
+	padding: 10px;
+	text-align: center;
+	width: 751px;
+}
+
+.error, .ad {
+	font-weight: bold;
+	color: #C00;
+	text-align: center;
+}
+
+input, select, .input {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1em;
+	color: #008040;
+	background: #FFFFFF;
+	border: 1px dotted #004080;
+}
+
+input[type="submit"] {
+	margin-top: 10px;
+	cursor: pointer;
+}
